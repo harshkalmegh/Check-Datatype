@@ -15,16 +15,23 @@
      * 3. pass value and check value's datatype with typeof
      * 4. return datatype
      */
-
+    // Version 1
     function checkDatatype(val) {
-      if (!val) {
+      if (val === undefined || val === null) {
         return "Enter proper value";
       }
       if (Array.isArray(val)) {
         return "Input is Array";
       }
-      return `Input is ${typeof val}`;
+      return `Input is of type : ${typeof val}`;
     }
-    console.log(checkDatatype(true));
+    console.log(checkDatatype(""));
+
+    // Version 2
+    function checkDatatype2(val) {
+      if (val === undefined || val === null) return "Enter proper value";
+      return Array.isArray(val) ? "Array" : typeof val;
+    }
+    console.log(checkDatatype2(4));
   </script>
 </html>
