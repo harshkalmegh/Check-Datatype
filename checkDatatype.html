@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /**
+     * Algorithm
+     * 1. handle Edge Case for undefined, null
+     * 2. check value is array handle it with ArrayisArray
+     * 3. pass value and check value's datatype with typeof
+     * 4. return datatype
+     */
+
+    function checkDatatype(val) {
+      if (!val) {
+        return "Enter proper value";
+      }
+      if (Array.isArray(val)) {
+        return "Input is Array";
+      }
+      return `Input is ${typeof val}`;
+    }
+    console.log(checkDatatype(true));
+  </script>
+</html>
