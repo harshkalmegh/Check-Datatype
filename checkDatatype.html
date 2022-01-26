@@ -30,7 +30,9 @@
     // Version 2
     function checkDatatype2(val) {
       if (val === undefined || val === null) return "Enter proper value";
-      return Array.isArray(val) ? "Array" : typeof val;
+      return Array.isArray(val)
+        ? `Input is of type : Array`
+        : `Input is of type : ${typeof val}`;
     }
     console.log(checkDatatype2(4));
   </script>
