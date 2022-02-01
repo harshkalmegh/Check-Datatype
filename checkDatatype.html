@@ -11,7 +11,7 @@
     /**
      * Algorithm
      * 1. handle Edge Case for undefined, null
-     * 2. check value is array handle it with ArrayisArray
+     * 2. check value is array handle it with Array.isArray
      * 3. pass value and check value's datatype with typeof
      * 4. return datatype
      */
@@ -25,7 +25,7 @@
       }
       return `Input is of type : ${typeof val}`;
     }
-    console.log(checkDatatype(""));
+    console.log(checkDatatype("NaN"));
 
     // Version 2
     function checkDatatype2(val) {
